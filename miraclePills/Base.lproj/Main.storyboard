@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="qZB-td-pkp"/>
@@ -87,6 +87,9 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSt-TE-nj5">
                                 <state key="normal" image="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyNowBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FdE-NN-iBM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ax-O7-jyS">
                                 <constraints>
@@ -145,13 +148,26 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buyNowBtn" destination="sSt-TE-nj5" id="Olw-pM-N6Q"/>
+                        <outlet property="city" destination="46C-Rv-tzK" id="yfq-7p-j1J"/>
+                        <outlet property="enterCity" destination="d6e-LK-VPK" id="gLN-C2-Crw"/>
+                        <outlet property="enterFullNamed" destination="agf-tY-eyl" id="1qD-dN-Xd7"/>
+                        <outlet property="enterStreetAdd" destination="FhD-gY-NhY" id="HfI-6M-z5n"/>
+                        <outlet property="fullNamed" destination="qfX-1m-CG7" id="vwb-dS-25v"/>
+                        <outlet property="grayDivide" destination="LxZ-ds-6z6" id="FF1-Yv-1GF"/>
+                        <outlet property="miraclePillsEmoji" destination="kn6-3l-csb" id="S6H-bz-VOs"/>
+                        <outlet property="namePills" destination="Guy-AU-syD" id="8cI-1T-H9z"/>
+                        <outlet property="price" destination="ZcN-Uw-WNx" id="9lK-Ec-fO7"/>
+                        <outlet property="stateLabel" destination="wqu-aZ-vDJ" id="Q0l-pI-CIf"/>
                         <outlet property="statePicker" destination="sBb-SK-Tfh" id="Pfg-Yr-WQe"/>
                         <outlet property="statePickerBtn" destination="8ax-O7-jyS" id="cQA-kj-gBR"/>
+                        <outlet property="streetAddress" destination="zpn-pF-zBW" id="pmG-K2-I9v"/>
+                        <outlet property="successIndicatorPic" destination="qZB-td-pkp" id="rDc-Uw-d6y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-648" y="-818"/>
+            <point key="canvasLocation" x="-391" y="-819"/>
         </scene>
     </scenes>
     <resources>
